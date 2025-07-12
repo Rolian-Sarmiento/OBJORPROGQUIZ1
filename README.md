@@ -1,6 +1,9 @@
 # Personal Portfolio Website
 
 This is a personal portfolio website built using Django and Bootstrap. It showcases my projects, skills, and experiences.
+NOTE: ADMIN PASSWORD IS
+USER: ADMIN
+PASSWORD 123
 
 ---
 
