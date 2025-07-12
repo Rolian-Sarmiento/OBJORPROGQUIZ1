@@ -1,0 +1,10 @@
+{% extends 'template.html' %}
+
+{% block mymessage %}
+
+{# {{ qsVar }} #}
+{% for Project in qsVar %}
+{{ Project }} <br>
+{% endfor %}
+
+{% endblock %}

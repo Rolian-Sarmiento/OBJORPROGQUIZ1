@@ -15,28 +15,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from . import views
+from django.urls import path
 
 from DjangoProject3.views import tab
 from DjangoProject3.views import tab1
-
-from django.shortcuts import render
-from .models import Project
-
-def project_list(request):
-    projects = Project.objects.all()
-    return render(request, 'projects/project_list.html', {'projects': projects})
+from DjangoProject3.views import list_view
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', tab),
 
+    path('list/', list_view, name='list_view'),
+
     path('about/', tab1),
 
-    path('project/', views.project_list, name='project-list'),
-
-    path('projects/', include('projects.urls')),
 
 ]
 

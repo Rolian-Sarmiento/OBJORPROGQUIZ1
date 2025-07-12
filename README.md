@@ -16,3 +16,5 @@ This is a personal portfolio website built using Django and Bootstrap. It showca
 
 1. **Clone the repository**
    ```bash
+   git clone https://github.com/Rolian-Sarmiento/OBJORPROGQUIZ1.git
+   cd OBJORPROGQUIZ1
