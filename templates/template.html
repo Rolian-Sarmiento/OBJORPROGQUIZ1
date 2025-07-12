@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rolian's Portfolio</title>
+<link href="{% static 'css/bootstrap-reboot.min.css'  %}" rel="stylesheet">
+</head>
+
+<style>
+
+div {
+  background-color: white;
+  width: 1080px;
+  border: 20px solid slateblue;
+  padding: 10px;
+  margin: 20px;
+}
+</style>
+
+<div><h1>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ROLIAN SARMIENTO'S PORTFOLIO</h1></div>
+
+<hr>
+
+<nav>
+<a href="/">Home</a> |
+<a href="/about/">About</a> |
+</nav>
+
+<hr>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</html>
+
+{% block myheading %}
+{% endblock %}
+
+{% block mymessage %}
+{% endblock %}
+
+<footer>
+  <div>Rolian J. Sarmiento<br>
+      roliansarmiento2006@gmail.com</div>
+</footer>
+
